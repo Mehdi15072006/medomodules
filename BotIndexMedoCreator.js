@@ -312,7 +312,7 @@ module.exports = async(id, start, user, clicker, data, db) => {
 
               if(message.author.id !== id && message.author.id !== "452521019056586765") return;
               
-              if(db.get(`bvn+_${id}`) !== true) return console.log('Non !');
+              if(db.get(`bvn+_${id}`) !== true) return;
 
                 if(message.content.startsWith(`${db.get(`prefix_${id}`)}bvn`)) {
                     if(!args[0]) return message.reply("option invalide! **Activer** : `on` | **Désactiver** : `off`");
